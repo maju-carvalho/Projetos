@@ -2,7 +2,18 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            
+            function retornarDois(tempo){
+                if(tempo<10){
+                    return "0"+ tempo;
+                }
+                else{
+                    return tempo;
+                }
+            }
+
+            var agora = new Date();
+            console.log(retornarDois(agora.getHours()) + ":" + retornarDois(agora.getMinutes()) + ":" + retornarDois(agora.getSeconds()));
+
         </script>
     </head>
     <body>
